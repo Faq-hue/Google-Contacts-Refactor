@@ -7,11 +7,11 @@ import src.model.*;
 
 public class SaveContact implements ISaveContact {
 
-  @Override
-  public void SaveContactInDisc(Contacts... contact) {
+ @Override
+  public void SaveContactInDisc(String directory, Contacts... contact) {
     Gson g = new Gson();
     for (int i = 0; i < contact.length; i++) {
-      File file = new File("data" + File.separator + "conctact" + i + ".json");
+      File file = new File(directory + File.separator + contact[i].getEmailLabel()+ ".json");
       try {
         PrintWriter archivo = new PrintWriter(file.getAbsolutePath());
         file.createNewFile();
