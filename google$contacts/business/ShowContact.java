@@ -5,6 +5,8 @@ import java.io.File;
 import java.util.Scanner;
 import com.google.gson.Gson;
 
+
+// TODO - HACER CAMBIOS PARA LEER TODOS LOS ARCHVIOS DE UN DIRECTORIO
 public class ShowContact {
     public class Listarcontactos {
         public Contacts[] listsContacts(int cant) {
