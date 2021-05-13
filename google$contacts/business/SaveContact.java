@@ -1,9 +1,9 @@
-package src.business;
+package business;
 
 import java.io.File;
 import java.io.PrintWriter;
 import com.google.gson.*;
-import src.model.*;
+import model.*;
 
 public class SaveContact implements ISaveContact {
 
