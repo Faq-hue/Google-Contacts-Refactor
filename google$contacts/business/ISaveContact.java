@@ -1,6 +1,6 @@
-package src.business;
+package business;
 
-import src.model.Contacts;
+import model.Contacts;
 
 public interface ISaveContact {
   public void SaveContactInDisc(String directory,Contacts... contact);
