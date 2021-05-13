@@ -19,7 +19,6 @@ public class SaveContact implements ISaveContact {
         archivo.close();
       } catch (Exception e) {
         System.out.println(e);
-      }finally{
       }
     }
   }
