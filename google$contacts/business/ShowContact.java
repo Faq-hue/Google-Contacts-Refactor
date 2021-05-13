@@ -5,20 +5,18 @@ import java.io.File;
 import java.util.Scanner;
 import com.google.gson.Gson;
 
-
-// TODO - HACER CAMBIOS PARA LEER TODOS LOS ARCHVIOS DE UN DIRECTORIO
 public class ShowContact {
-    public class Listarcontactos {
+    public class showContactinDisc{
         public Contacts[] listsContacts(int cant) {
             Gson g = new Gson();
             Contacts[] contacts = new Contacts[5];
             for (int i = 0; i < cant; i++) {
                 try {
-                    Scanner lectura = new Scanner(new File("datos" + File.separator + "conctacto" + i + ".json"));
-                    String datos = "";
-                    while (lectura.hasNextLine())
-                        datos = lectura.nextLine();
-                    contacts[i] = g.fromJson(datos, Contacts.class);
+                    Scanner read = new Scanner(new File("data" + File.separator + "conctact" + i + ".json"));
+                    String data = "";
+                    while (read.hasNextLine())
+                        data = read.nextLine();
+                    contacts[i] = g.fromJson(data, Contacts.class);
                     lectura.close();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -28,4 +26,3 @@ public class ShowContact {
         }
     }
 }
-
