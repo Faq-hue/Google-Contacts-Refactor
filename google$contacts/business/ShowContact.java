@@ -6,7 +6,7 @@ import java.util.Scanner;
 import com.google.gson.Gson;
 
 public class ShowContact {
-    public class showContactinDisc{
+    public class ShowContactInDisk{
         public Contacts[] listsContacts(int cant) {
             Gson g = new Gson();
             Contacts[] contacts = new Contacts[5];
