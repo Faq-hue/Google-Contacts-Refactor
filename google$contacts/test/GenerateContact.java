@@ -100,9 +100,7 @@ public class GenerateContact {
 
     Random r = new Random();
 
-    int x = r.nextInt(4);
-
-    return mail + domain[x];
+    return mail + r.nextInt(100) + domain[r.nextInt(4)];
   }
 
   public static String generateCountry() {
