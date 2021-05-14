@@ -7,13 +7,15 @@ import com.google.gson.*;
 
 public class EdithContact implements IEdithContact {
 
+    Gson g = new Gson();
+
     @Override
     public void edith(String directory, Contacts contact, Contacts contactEdithed) {
 
-        Gson g = new Gson();
+        //the contact that is passed must be the same with the pertinent changes
 
-        File file = new File(directory + File.separator + contact[i].getName() + contact[i].getSurname() + " "
-          + contact.hashCode() + ".json");
+        File file = new File(directory + File.separator + contact.getName() + contact.getSurname() + " "
+        + contact.hashCode() + ".json");
 
         try {
             PrintWriter archivo = new PrintWriter(file.getAbsolutePath());
@@ -27,15 +29,15 @@ public class EdithContact implements IEdithContact {
 
     }
 
-    @Override
-    public void delete(Contacts contact) {
-
-    }
 
     @Override
-    public void replace() {
-        // TODO Auto-generated method stub
+    public void delete( String directory, Contacts contact ) {
 
+        File file = new File(directory + File.separator + contact.getName() + contact.getSurname() + " "
+        + contact.hashCode() + ".json");
+
+        file.delete();
+        
     }
 
 }
