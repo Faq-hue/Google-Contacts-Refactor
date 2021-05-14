@@ -18,7 +18,7 @@ public class EdithContact implements IEdithContact {
         + contact.hashCode() + ".json");
 
         try {
-            PrintWriter archivo = new PrintWriter(file.getAbsolutePath());
+            PrintWriter archivo = new PrintWriter(file.getPath());
             file.createNewFile();
             archivo.println(g.toJson(contactEdithed));
             archivo.close();
