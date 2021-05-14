@@ -624,6 +624,10 @@ public class Contacts {
 
     this.notes = notes;
   }
+  
+  public int hashCode() {
+    return Objects.hash(name,emailLabel,surname);
+  }
 
   public void validation(String word) {
 
