@@ -7,8 +7,6 @@ import com.google.gson.*;
 
 public class EdithContact implements IEdithContact {
 
-    Gson g = new Gson();
-
     @Override
     public void edith(String directory, Contacts contact, Contacts contactEdithed) {
 
