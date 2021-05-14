@@ -1,4 +1,4 @@
-package src.business;
+package business;
 import java.io.IOException;
 
 public interface IShowContact {
