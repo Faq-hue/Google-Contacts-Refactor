@@ -12,7 +12,8 @@ public class EdithContact implements IEdithContact {
 
         Gson g = new Gson();
 
-        File file = new File(directory + File.separator + contact.getEmailLabel() + ".json");
+        File file = new File(directory + File.separator + contact[i].getName() + contact[i].getSurname() + " "
+          + contact.hashCode() + ".json");
 
         try {
             PrintWriter archivo = new PrintWriter(file.getAbsolutePath());
