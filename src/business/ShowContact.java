@@ -16,7 +16,7 @@ import src.model.Contacts;
 public class ShowContact implements IShowContact {
 
   @Override
-  public void ShowContactInDisk(String directory) throws IOException {
+  public void ShowContactInDisk(String directory){
     Gson g = new Gson();
     try (DirectoryStream<Path> stream = Files.newDirectoryStream(Paths.get(directory))) {
       for (Path file : stream) {

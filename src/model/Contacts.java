@@ -75,6 +75,9 @@ public class Contacts {
   public String getEmailLabel() {
     return emailLabel.toString();
   }
+  public String getEmailLabelData(){
+    return emailLabel.size() != 0 ? emailLabel.get(0).getData(): null;
+  }
 
   public void setListEmailLabel(String data, String label) {
 

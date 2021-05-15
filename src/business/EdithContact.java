@@ -7,17 +7,12 @@ import com.google.gson.*;
 
 class EdithContact implements IEdithContact {
 
-
   @Override
   public void edith(String directory, Contacts contact, Contacts contactEdithed) {
-
     Gson g = new Gson();
     this.delete(directory, contact);
-
     File file = new File(
-        directory + File.separator + contactEdithed.getName() + contactEdithed.getSurname() + " "  + ".json");
-
-    
+        directory + File.separator + contactEdithed.getName() + contactEdithed.getSurname() + " " + ".json");
     try {
       PrintWriter archivo = new PrintWriter(file.getAbsolutePath());
       archivo.println(g.toJson(contactEdithed));
@@ -30,11 +25,8 @@ class EdithContact implements IEdithContact {
 
   @Override
   public void delete(String directory, Contacts contact) {
-    File file = new File(
-        directory + File.separator + contact.getName() + contact.getSurname() + " " + ".json");
+    File file = new File(directory + File.separator + contact.getName() + contact.getSurname() + " " + ".json");
     file.delete();
   }
-
-
 
 }

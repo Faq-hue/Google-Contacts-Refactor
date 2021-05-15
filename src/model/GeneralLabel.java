@@ -30,5 +30,6 @@ class GeneralLabel {
     return this.getData() + " " + this.getLabel();
 
   }
+  
 
 }
