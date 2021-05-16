@@ -1,19 +1,19 @@
 package src.business;
 
 public class Factory {
-    public IEditContact buildEditContact(){
+    public static IEditContact buildEditContact(){
         return new EditContact();
     }
-    public ISaveContact bISaveContact(){
+    public static ISaveContact bISaveContact(){
         return new SaveContact();
     }
-    public ISearchContact bISearchContact(){
+    public static ISearchContact bISearchContact(){
         return new SearchContact();
     }
-    public IShowContact bIShowContact(){
+    public static IShowContact bIShowContact(){
         return new ShowContact();
     }
-    public ITagContact bITagContact(){
+    public static ITagContact bITagContact(){
         return new TagContact();
     }
 }
