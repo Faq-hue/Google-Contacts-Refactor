@@ -13,16 +13,15 @@ public class Main {
     }
 
     SaveContact sv = new SaveContact();
-    
+ 
     sv.SaveContactInDisc("data",c);
 
     ShowContact sh = new ShowContact();
 
     sh.ShowContactInDisk("data");
 
-    
     TagContact tg = new TagContact();
-    
+
     Scanner scanner = new Scanner(System.in);
     String string;
     String string2;
@@ -32,7 +31,7 @@ public class Main {
     System.out.println();
     System.out.print("Input For key: ");
     string2 = scanner.nextLine();
-    tg.tag("data", string2, string);
+    tg.tag("data", string, string2);
     
     
     System.out.println("------------------------------");
@@ -41,15 +40,7 @@ public class Main {
 
     SearchContact sr = new SearchContact();
 
-    
-    
-    
-    
     sr.searchAndShow("data", string);
-
-
-
-
 
     scanner.close();
   }
