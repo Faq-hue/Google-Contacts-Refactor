@@ -24,11 +24,10 @@ public class TagContact implements ITagContact {
         Scanner read = new Scanner(new File(directory + File.separator + file.getFileName().toString()));
         while (read.hasNextLine()) {
           c = g.fromJson(read.nextLine(), Contacts.class);
-          for (String k : key) {
-            if (comparation(c, k)) {
-              System.out.println("-------------------------------------------------");
-              c.setLabel(tag);
+          for (int i = 0; i < key.length; i++) {
+            if (comparation(c, key[i])) {
               SaveContact sv = new SaveContact();
+              c.setLabel(tag);
               sv.SaveContactInDisc(directory, c);
             }
           }
