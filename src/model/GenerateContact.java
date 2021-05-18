@@ -57,7 +57,7 @@ public class GenerateContact {
   public static String generateBusiness() {
 
     String business[] = { "Apple", "Google", "Sony", "Samsung", "LG", "Rexona", "Lakai", "Ford", "Fiat", "Nerv",
-        "Spotify", "McDonalds", "BMW", "SpaceX", "Adidas", "Nestle", "Heineken", "P&G", "Micrososft", "Subway" };
+        "Spotify", "McDonalds", "BMW", "SpaceX", "Adidas", "Nestle", "Heineken", "Micrososft", "Subway", "Casio" };
 
     Random r = new Random();
 
@@ -69,8 +69,8 @@ public class GenerateContact {
   public static String generatePosition() {
 
     String position[] = { "CEO", "Ingeniero", "Lavaplatos", "Cocinero", "Asistente", "Tecnico", "Gerente",
-        "Recursos Humanos", "Administrador", "Vendedor", "Analista", "Ejecutivo", "Community Manager", "Supervisor",
-        "Auditor", "Chofer", "Liquidador de Sueldos", "Consultor", "Webmaster", "Programador" };
+        "RecursosHumanos", "Administrador", "Vendedor", "Analista", "Ejecutivo", "CommunityManager", "Supervisor",
+        "Auditor", "Chofer", "LiquidadorDeSueldos", "Consultor", "Webmaster", "Programador" };
 
     Random r = new Random();
 
