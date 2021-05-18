@@ -650,7 +650,7 @@ public class Contacts {
 
     String ts = "Name: " + this.getName() + "\nSurname: " + this.getSurname() + "\nPhone and label: "
         + this.phoneLabel.toString() + "\nCountry: " + this.country + "\nEmail and label: " + this.emailLabel.toString()
-        + "\nContact label: " + this.label;
+        + "\nContact label: " + this.label + "\nBusiness: " + this.business + "\nPosition" + this.position;
 
     return ts;
   }
